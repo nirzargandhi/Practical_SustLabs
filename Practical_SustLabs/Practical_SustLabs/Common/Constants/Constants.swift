@@ -20,6 +20,7 @@ enum ViewControllerName {
 //MARK: - Cell Identifiers
 enum CellIdentifiers {
 
+    static let kCellDashboard = "CellDashboard"
 }
 
 //MARK: - Message's

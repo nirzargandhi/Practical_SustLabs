@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E65C4C642ACC72B500D811D2 /* DashboardVC+UITableViewDelegate+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65C4C632ACC72B500D811D2 /* DashboardVC+UITableViewDelegate+UITableViewDataSource.swift */; };
+		E65C4C662ACC73A500D811D2 /* DashboardVC+UICollectionViewDelegate+UICollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65C4C652ACC73A500D811D2 /* DashboardVC+UICollectionViewDelegate+UICollectionViewDataSource.swift */; };
 		E69FB8E22ACC55AD0035D884 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69FB8E12ACC55AD0035D884 /* AppDelegate.swift */; };
 		E69FB8EE2ACC55B00035D884 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E69FB8EC2ACC55B00035D884 /* LaunchScreen.storyboard */; };
 		E69FB8F92ACC55B10035D884 /* Practical_SustLabsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69FB8F82ACC55B10035D884 /* Practical_SustLabsTests.swift */; };
@@ -31,7 +33,9 @@
 		E69FB93B2ACC61B10035D884 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69FB93A2ACC61B10035D884 /* UIViewController+Extension.swift */; };
 		E69FB93E2ACC61FC0035D884 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69FB93D2ACC61FC0035D884 /* Utility.swift */; };
 		E69FB9402ACC62770035D884 /* JailbreakDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69FB93F2ACC62770035D884 /* JailbreakDetector.swift */; };
-		E69FB9452ACC63BE0035D884 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69FB9442ACC63BE0035D884 /* DashboardVC.swift */; };
+		E69FB9492ACC6B260035D884 /* DashboardTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69FB9482ACC6B260035D884 /* DashboardTVC.swift */; };
+		E69FB94B2ACC6B360035D884 /* DashboardCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69FB94A2ACC6B360035D884 /* DashboardCVC.swift */; };
+		E6C69B942ACC7112006483FB /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C69B932ACC7112006483FB /* DashboardVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +56,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E65C4C632ACC72B500D811D2 /* DashboardVC+UITableViewDelegate+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DashboardVC+UITableViewDelegate+UITableViewDataSource.swift"; sourceTree = "<group>"; };
+		E65C4C652ACC73A500D811D2 /* DashboardVC+UICollectionViewDelegate+UICollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DashboardVC+UICollectionViewDelegate+UICollectionViewDataSource.swift"; sourceTree = "<group>"; };
 		E69FB8DE2ACC55AD0035D884 /* Practical_SustLabs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Practical_SustLabs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E69FB8E12ACC55AD0035D884 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E69FB8ED2ACC55B00035D884 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -80,7 +86,9 @@
 		E69FB93A2ACC61B10035D884 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		E69FB93D2ACC61FC0035D884 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		E69FB93F2ACC62770035D884 /* JailbreakDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JailbreakDetector.swift; sourceTree = "<group>"; };
-		E69FB9442ACC63BE0035D884 /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
+		E69FB9482ACC6B260035D884 /* DashboardTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTVC.swift; sourceTree = "<group>"; };
+		E69FB94A2ACC6B360035D884 /* DashboardCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCVC.swift; sourceTree = "<group>"; };
+		E6C69B932ACC7112006483FB /* DashboardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -274,9 +282,29 @@
 		E69FB9432ACC63AD0035D884 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
-				E69FB9442ACC63BE0035D884 /* DashboardVC.swift */,
+				E69FB9472ACC6B100035D884 /* Cell */,
+				E69FB9462ACC6B0A0035D884 /* Controller */,
 			);
 			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		E69FB9462ACC6B0A0035D884 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E6C69B932ACC7112006483FB /* DashboardVC.swift */,
+				E65C4C652ACC73A500D811D2 /* DashboardVC+UICollectionViewDelegate+UICollectionViewDataSource.swift */,
+				E65C4C632ACC72B500D811D2 /* DashboardVC+UITableViewDelegate+UITableViewDataSource.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E69FB9472ACC6B100035D884 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E69FB94A2ACC6B360035D884 /* DashboardCVC.swift */,
+				E69FB9482ACC6B260035D884 /* DashboardTVC.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -423,11 +451,15 @@
 				E69FB93E2ACC61FC0035D884 /* Utility.swift in Sources */,
 				E69FB9402ACC62770035D884 /* JailbreakDetector.swift in Sources */,
 				E69FB93B2ACC61B10035D884 /* UIViewController+Extension.swift in Sources */,
+				E69FB94B2ACC6B360035D884 /* DashboardCVC.swift in Sources */,
+				E6C69B942ACC7112006483FB /* DashboardVC.swift in Sources */,
+				E65C4C642ACC72B500D811D2 /* DashboardVC+UITableViewDelegate+UITableViewDataSource.swift in Sources */,
 				E69FB8E22ACC55AD0035D884 /* AppDelegate.swift in Sources */,
-				E69FB9452ACC63BE0035D884 /* DashboardVC.swift in Sources */,
+				E69FB9492ACC6B260035D884 /* DashboardTVC.swift in Sources */,
 				E69FB9352ACC61300035D884 /* AppDelegate+Configuration.swift in Sources */,
 				E69FB9322ACC5E280035D884 /* Constants.swift in Sources */,
 				E69FB9392ACC61880035D884 /* UIView+Extension.swift in Sources */,
+				E65C4C662ACC73A500D811D2 /* DashboardVC+UICollectionViewDelegate+UICollectionViewDataSource.swift in Sources */,
 				E69FB9372ACC616D0035D884 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
