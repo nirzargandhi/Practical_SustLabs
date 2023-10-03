@@ -14,13 +14,16 @@ class DashboardVC: UIViewController {
     @IBOutlet weak var lblNoData: UILabel!
 
     //MARK: - Variable Declaration
-    var intTemp = 9
+    var arrDashboard : [DashboardModel]?
+    lazy var objDashboardVCPresenter = DashboardVCPresenter(view: self)
 
     //MARK: - ViewController Method
     override func viewDidLoad() {
         super.viewDidLoad()
 
         initialization()
+
+        objDashboardVCPresenter.loadJson(filename: "JsonData")
     }
 
     //MARK: - Initialization Method
@@ -34,7 +37,5 @@ class DashboardVC: UIViewController {
         }
 
         tblDashboard.tableFooterView = UIView()
-
-        tblDashboard.isHidden = false
     }
 }

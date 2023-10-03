@@ -27,6 +27,16 @@ enum CellIdentifiers {
 enum AlertMessage {
 
     static let msgError = "Oops! That didn't work. Please try later :("
+    static let msgJsonFileLoadError = "JSON file cannot be loaded"
+}
+
+//MARK: - DateTime Format
+enum DateAndTimeFormatString {
+
+    static let strDateFormat_yyyyMMdd = "yyyyMMdd"
+    static let strDateFormat_yyyyMMddHH = "yyyyMMddHH"
+    static let strDateFormat_dd = "dd"
+    static let strDateFormat_HH = "HH"
 }
 
 //MARK: - Fonts

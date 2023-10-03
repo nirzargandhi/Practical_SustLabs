@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E627E1082ACC959700AB5750 /* JsonData.json in Resources */ = {isa = PBXBuildFile; fileRef = E627E1072ACC959700AB5750 /* JsonData.json */; };
+		E627E10A2ACC95D500AB5750 /* DashboardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E627E1092ACC95D500AB5750 /* DashboardModel.swift */; };
+		E627E10F2ACC967700AB5750 /* DashboardVC+Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E627E10E2ACC967700AB5750 /* DashboardVC+Presenter.swift */; };
+		E627E1112ACC9C3B00AB5750 /* DashboardVC+DashboardVCPresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E627E1102ACC9C3B00AB5750 /* DashboardVC+DashboardVCPresenterDelegate.swift */; };
+		E646E47D2ACCB54A00D843F1 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E646E47C2ACCB54900D843F1 /* Array+Extension.swift */; };
 		E65C4C642ACC72B500D811D2 /* DashboardVC+UITableViewDelegate+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65C4C632ACC72B500D811D2 /* DashboardVC+UITableViewDelegate+UITableViewDataSource.swift */; };
 		E65C4C662ACC73A500D811D2 /* DashboardVC+UICollectionViewDelegate+UICollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65C4C652ACC73A500D811D2 /* DashboardVC+UICollectionViewDelegate+UICollectionViewDataSource.swift */; };
 		E69FB8E22ACC55AD0035D884 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69FB8E12ACC55AD0035D884 /* AppDelegate.swift */; };
@@ -56,6 +61,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E627E1072ACC959700AB5750 /* JsonData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = JsonData.json; sourceTree = "<group>"; };
+		E627E1092ACC95D500AB5750 /* DashboardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardModel.swift; sourceTree = "<group>"; };
+		E627E10E2ACC967700AB5750 /* DashboardVC+Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DashboardVC+Presenter.swift"; sourceTree = "<group>"; };
+		E627E1102ACC9C3B00AB5750 /* DashboardVC+DashboardVCPresenterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DashboardVC+DashboardVCPresenterDelegate.swift"; sourceTree = "<group>"; };
+		E646E47C2ACCB54900D843F1 /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
 		E65C4C632ACC72B500D811D2 /* DashboardVC+UITableViewDelegate+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DashboardVC+UITableViewDelegate+UITableViewDataSource.swift"; sourceTree = "<group>"; };
 		E65C4C652ACC73A500D811D2 /* DashboardVC+UICollectionViewDelegate+UICollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DashboardVC+UICollectionViewDelegate+UICollectionViewDataSource.swift"; sourceTree = "<group>"; };
 		E69FB8DE2ACC55AD0035D884 /* Practical_SustLabs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Practical_SustLabs.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,6 +126,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E627E1052ACC958200AB5750 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E627E1092ACC95D500AB5750 /* DashboardModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E627E1062ACC958900AB5750 /* JSON File */ = {
+			isa = PBXGroup;
+			children = (
+				E627E1072ACC959700AB5750 /* JsonData.json */,
+			);
+			path = "JSON File";
+			sourceTree = "<group>";
+		};
+		E627E10B2ACC964400AB5750 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E627E10E2ACC967700AB5750 /* DashboardVC+Presenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		E69FB8D52ACC55AD0035D884 = {
 			isa = PBXGroup;
 			children = (
@@ -229,6 +263,7 @@
 			children = (
 				E69FB9302ACC5E1B0035D884 /* Constants */,
 				E69FB9332ACC611A0035D884 /* Extensions */,
+				E627E1062ACC958900AB5750 /* JSON File */,
 				E69FB9412ACC62E50035D884 /* Plist File */,
 				E69FB93C2ACC61EF0035D884 /* Utility */,
 			);
@@ -247,6 +282,7 @@
 			isa = PBXGroup;
 			children = (
 				E69FB9342ACC61300035D884 /* AppDelegate+Configuration.swift */,
+				E646E47C2ACCB54900D843F1 /* Array+Extension.swift */,
 				E69FB9362ACC616D0035D884 /* UIColor+Extension.swift */,
 				E69FB9382ACC61880035D884 /* UIView+Extension.swift */,
 				E69FB93A2ACC61B10035D884 /* UIViewController+Extension.swift */,
@@ -284,6 +320,8 @@
 			children = (
 				E69FB9472ACC6B100035D884 /* Cell */,
 				E69FB9462ACC6B0A0035D884 /* Controller */,
+				E627E1052ACC958200AB5750 /* Model */,
+				E627E10B2ACC964400AB5750 /* Presenter */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -292,6 +330,7 @@
 			isa = PBXGroup;
 			children = (
 				E6C69B932ACC7112006483FB /* DashboardVC.swift */,
+				E627E1102ACC9C3B00AB5750 /* DashboardVC+DashboardVCPresenterDelegate.swift */,
 				E65C4C652ACC73A500D811D2 /* DashboardVC+UICollectionViewDelegate+UICollectionViewDataSource.swift */,
 				E65C4C632ACC72B500D811D2 /* DashboardVC+UITableViewDelegate+UITableViewDataSource.swift */,
 			);
@@ -414,6 +453,7 @@
 				E69FB9142ACC576A0035D884 /* Main.storyboard in Resources */,
 				E69FB92A2ACC5E0B0035D884 /* Inter-Regular.ttf in Resources */,
 				E69FB9252ACC5E0B0035D884 /* Color.xcassets in Resources */,
+				E627E1082ACC959700AB5750 /* JsonData.json in Resources */,
 				E69FB9292ACC5E0B0035D884 /* Inter-Bold.ttf in Resources */,
 				E69FB92E2ACC5E0B0035D884 /* Inter-SemiBold.ttf in Resources */,
 				E69FB9242ACC5E0B0035D884 /* Assets.xcassets in Resources */,
@@ -448,6 +488,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E627E10A2ACC95D500AB5750 /* DashboardModel.swift in Sources */,
 				E69FB93E2ACC61FC0035D884 /* Utility.swift in Sources */,
 				E69FB9402ACC62770035D884 /* JailbreakDetector.swift in Sources */,
 				E69FB93B2ACC61B10035D884 /* UIViewController+Extension.swift in Sources */,
@@ -455,6 +496,9 @@
 				E6C69B942ACC7112006483FB /* DashboardVC.swift in Sources */,
 				E65C4C642ACC72B500D811D2 /* DashboardVC+UITableViewDelegate+UITableViewDataSource.swift in Sources */,
 				E69FB8E22ACC55AD0035D884 /* AppDelegate.swift in Sources */,
+				E627E10F2ACC967700AB5750 /* DashboardVC+Presenter.swift in Sources */,
+				E646E47D2ACCB54A00D843F1 /* Array+Extension.swift in Sources */,
+				E627E1112ACC9C3B00AB5750 /* DashboardVC+DashboardVCPresenterDelegate.swift in Sources */,
 				E69FB9492ACC6B260035D884 /* DashboardTVC.swift in Sources */,
 				E69FB9352ACC61300035D884 /* AppDelegate+Configuration.swift in Sources */,
 				E69FB9322ACC5E280035D884 /* Constants.swift in Sources */,

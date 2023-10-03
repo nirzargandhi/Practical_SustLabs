@@ -61,17 +61,17 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DhS-YP-z3Z">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DhS-YP-z3Z">
                                                     <rect key="frame" x="10" y="5" width="34" height="34"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="34" id="c95-xK-Q0V"/>
+                                                        <constraint firstAttribute="width" constant="34" id="6Bg-1L-hn5"/>
                                                         <constraint firstAttribute="height" constant="34" id="hNX-cp-cbC"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Inter-Bold" family="Inter" pointSize="20"/>
                                                     <color key="textColor" name="AppPrimary"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ckm-Ez-2DN">
+                                                <collectionView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ckm-Ez-2DN">
                                                     <rect key="frame" x="54" y="5" width="321" height="34"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
@@ -95,7 +95,11 @@
                                                                         <rect key="frame" x="0.0" y="0.0" width="34" height="34"/>
                                                                         <subviews>
                                                                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mlc-Hx-fDC">
-                                                                                <rect key="frame" x="0.0" y="34" width="34" height="0.0"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="34" height="34"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="34" id="Dwu-Th-5UN"/>
+                                                                                    <constraint firstAttribute="width" constant="34" id="kkw-zX-6XJ"/>
+                                                                                </constraints>
                                                                                 <fontDescription key="fontDescription" name="Inter-Bold" family="Inter" pointSize="20"/>
                                                                                 <color key="textColor" name="AppPrimary"/>
                                                                                 <nil key="highlightedColor"/>
@@ -103,6 +107,10 @@
                                                                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SSg-LQ-LdX">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="34" height="34"/>
                                                                                 <color key="backgroundColor" name="AppGreen"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="34" id="QrN-pv-rs8"/>
+                                                                                    <constraint firstAttribute="width" constant="34" id="e7f-h8-muJ"/>
+                                                                                </constraints>
                                                                                 <userDefinedRuntimeAttributes>
                                                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                                         <real key="value" value="5"/>
@@ -111,16 +119,6 @@
                                                                             </view>
                                                                         </subviews>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="trailing" secondItem="mlc-Hx-fDC" secondAttribute="trailing" id="20v-4e-y7k"/>
-                                                                            <constraint firstItem="SSg-LQ-LdX" firstAttribute="top" secondItem="ak2-hD-PsR" secondAttribute="top" id="Hbu-WW-k90"/>
-                                                                            <constraint firstItem="mlc-Hx-fDC" firstAttribute="leading" secondItem="ak2-hD-PsR" secondAttribute="leading" id="JTh-A7-7zs"/>
-                                                                            <constraint firstItem="mlc-Hx-fDC" firstAttribute="top" secondItem="SSg-LQ-LdX" secondAttribute="bottom" id="KEQ-F1-JZc"/>
-                                                                            <constraint firstAttribute="trailing" secondItem="SSg-LQ-LdX" secondAttribute="trailing" id="Nnp-xr-k95"/>
-                                                                            <constraint firstItem="SSg-LQ-LdX" firstAttribute="leading" secondItem="ak2-hD-PsR" secondAttribute="leading" id="eVx-Vv-qNU"/>
-                                                                            <constraint firstAttribute="bottom" secondItem="SSg-LQ-LdX" secondAttribute="bottom" id="ogE-ev-j9C"/>
-                                                                            <constraint firstAttribute="bottom" secondItem="mlc-Hx-fDC" secondAttribute="bottom" id="rGw-gu-lXm"/>
-                                                                        </constraints>
                                                                     </stackView>
                                                                 </subviews>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -153,6 +151,7 @@
                                         <connections>
                                             <outlet property="cvDashboard" destination="ckm-Ez-2DN" id="tTl-tT-bRU"/>
                                             <outlet property="lblDate" destination="DhS-YP-z3Z" id="rjv-Id-7bc"/>
+                                            <outlet property="nslcLblDateWidth" destination="6Bg-1L-hn5" id="V2q-ow-BZW"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
