@@ -49,7 +49,7 @@ class DashboardVCPresenter {
 
         if arrDashboardData.count > 0 {
 
-            let dictDashboard = DashboardModel(hours: [], day: "hrs")
+            let dictDashboard = DashboardModel(hours: [], day: "hr")
 
             var arrTemp = [DashboardModel]()
             arrTemp.append(dictDashboard)

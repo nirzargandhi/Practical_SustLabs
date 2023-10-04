@@ -33,26 +33,42 @@ class DashboardTVC: UITableViewCell {
     //MARK: - Set CollView Dashboard Method
     internal func setCollViewDashboard(hours : [Hours], index : Int) {
 
+        setHoursData(hours: hours) {
+
+            intIndex = index
+
+            if intTotalData > 0 {
+                cvDashboard.delegate = self
+                cvDashboard.dataSource = self
+
+                cvDashboard.reloadData()
+
+                cvDashboard.isHidden = false
+            } else {
+                cvDashboard.isHidden = true
+            }
+        }
+    }
+
+    //MARK: - Set Hours Data Method
+    private func setHoursData(hours : [Hours], completion : () -> ()) {
+
         arrHours = hours.map { dictHours -> Hours in
 
             if let date = Utility().datetimeFormatter(strFormat: DateAndTimeFormatString.strDateFormat_yyyyMMddHH, isTimeZoneUTC: false).date(from: dictHours.hour ?? "") {
-                return Hours(hour: Utility().datetimeFormatter(strFormat: DateAndTimeFormatString.strDateFormat_HH, isTimeZoneUTC: false).string(from: date), record_count: dictHours.record_count ?? 0)
+
+                let hour = Utility().datetimeFormatter(strFormat: DateAndTimeFormatString.strDateFormat_HH, isTimeZoneUTC: false).string(from: date)
+                let intMaxReadCount = 1000.0
+                let opacity = (Double(dictHours.record_count ?? 0) / intMaxReadCount)
+
+                return Hours(hour: hour, record_count: dictHours.record_count ?? 0, intHour: Int(hour) ?? 0, opacity: opacity)
             } else {
-                return Hours(hour: "", record_count: 0)
+                return Hours(hour: "", record_count: 0, intHour: 0, opacity: 0.0)
             }
         }
 
-        intIndex = index
+        arrHours = arrHours?.sorted(by: {$0.intHour ?? 0 < $1.intHour ?? 0})
 
-        if intTotalData > 0 {
-            cvDashboard.delegate = self
-            cvDashboard.dataSource = self
-
-            cvDashboard.reloadData()
-
-            cvDashboard.isHidden = false
-        } else {
-            cvDashboard.isHidden = true
-        }
+        completion()
     }
 }

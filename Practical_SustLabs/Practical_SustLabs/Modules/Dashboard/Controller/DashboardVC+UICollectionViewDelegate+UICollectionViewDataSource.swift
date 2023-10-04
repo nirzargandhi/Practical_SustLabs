@@ -22,21 +22,9 @@ extension DashboardTVC : UICollectionViewDelegate, UICollectionViewDataSource, U
 
         cell.vColor.isHidden = (intIndex ?? 0) == 0 ? true : false
 
-        if arrHours?.contains(where: {$0.hour == "\(indexPath.row)"}) ?? false {
+        cell.vColor.backgroundColor = .appPrimaryColor()
 
-            let index = arrHours?.indices(where: {$0.hour == "\(indexPath.row)"})
-            let intReadCount = arrHours?[index?[0] ?? 0].record_count ?? 0
-
-            if intReadCount > 0 {
-                let intMaxReadCount = 1000.0
-
-                let opacity = (Double(intReadCount) / intMaxReadCount)
-
-                cell.vColor.backgroundColor = UIColor.appGreenColor().withAlphaComponent(CGFloat(opacity))
-            } else {
-                cell.vColor.backgroundColor = .appGrayColor()
-            }
-        }
+        cell.setViewOpacity(arrHours: arrHours ?? [], intIndex: indexPath.row)
 
         return cell
     }
@@ -45,6 +33,6 @@ extension DashboardTVC : UICollectionViewDelegate, UICollectionViewDataSource, U
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 34, height: 34)
+        return CGSize(width: 20, height: 20)
     }
 }

@@ -13,6 +13,9 @@
         <array key="Inter-Bold.ttf">
             <string>Inter-Bold</string>
         </array>
+        <array key="Inter-Medium.ttf">
+            <string>Inter-Medium</string>
+        </array>
         <array key="Inter-Regular.ttf">
             <string>Inter-Regular</string>
         </array>
@@ -62,54 +65,54 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DhS-YP-z3Z">
-                                                    <rect key="frame" x="10" y="5" width="34" height="34"/>
+                                                    <rect key="frame" x="10" y="12" width="20" height="20"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="34" id="6Bg-1L-hn5"/>
-                                                        <constraint firstAttribute="height" constant="34" id="hNX-cp-cbC"/>
+                                                        <constraint firstAttribute="width" constant="20" id="6Bg-1L-hn5"/>
+                                                        <constraint firstAttribute="height" constant="20" id="hNX-cp-cbC"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="Inter-Bold" family="Inter" pointSize="20"/>
+                                                    <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="14"/>
                                                     <color key="textColor" name="AppPrimary"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <collectionView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ckm-Ez-2DN">
-                                                    <rect key="frame" x="54" y="5" width="321" height="34"/>
+                                                    <rect key="frame" x="40" y="12" width="335" height="20"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="34" id="knH-g0-XZg"/>
+                                                        <constraint firstAttribute="height" constant="20" id="knH-g0-XZg"/>
                                                     </constraints>
-                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4YL-EK-abw">
-                                                        <size key="itemSize" width="34" height="34"/>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="5" minimumInteritemSpacing="5" id="4YL-EK-abw">
+                                                        <size key="itemSize" width="20" height="20"/>
                                                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                     </collectionViewFlowLayout>
                                                     <cells>
                                                         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellDashboard" id="CwD-WV-po1" customClass="DashboardCVC" customModule="Practical_SustLabs" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="0.0" width="34" height="34"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="mWF-3G-U5I">
-                                                                <rect key="frame" x="0.0" y="0.0" width="34" height="34"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <subviews>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ak2-hD-PsR">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="34" height="34"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
                                                                         <subviews>
                                                                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mlc-Hx-fDC">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="34" height="34"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
                                                                                 <constraints>
-                                                                                    <constraint firstAttribute="height" constant="34" id="Dwu-Th-5UN"/>
-                                                                                    <constraint firstAttribute="width" constant="34" id="kkw-zX-6XJ"/>
+                                                                                    <constraint firstAttribute="height" constant="20" id="Dwu-Th-5UN"/>
+                                                                                    <constraint firstAttribute="width" constant="20" id="kkw-zX-6XJ"/>
                                                                                 </constraints>
-                                                                                <fontDescription key="fontDescription" name="Inter-Bold" family="Inter" pointSize="20"/>
+                                                                                <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="14"/>
                                                                                 <color key="textColor" name="AppPrimary"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SSg-LQ-LdX">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="34" height="34"/>
-                                                                                <color key="backgroundColor" name="AppGreen"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                                                <color key="backgroundColor" name="AppPrimary"/>
                                                                                 <constraints>
-                                                                                    <constraint firstAttribute="height" constant="34" id="QrN-pv-rs8"/>
-                                                                                    <constraint firstAttribute="width" constant="34" id="e7f-h8-muJ"/>
+                                                                                    <constraint firstAttribute="height" constant="20" id="QrN-pv-rs8"/>
+                                                                                    <constraint firstAttribute="width" constant="20" id="e7f-h8-muJ"/>
                                                                                 </constraints>
                                                                                 <userDefinedRuntimeAttributes>
                                                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -195,9 +198,6 @@
     <resources>
         <namedColor name="AppBackground">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="AppGreen">
-            <color red="0.13300000131130219" green="0.54500001668930054" blue="0.13300000131130219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="AppPrimary">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
