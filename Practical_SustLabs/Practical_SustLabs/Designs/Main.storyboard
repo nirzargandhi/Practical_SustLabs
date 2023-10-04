@@ -54,7 +54,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="never" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="gvN-nv-4ar">
-                                <rect key="frame" x="0.0" y="74.5" width="375" height="592.5"/>
+                                <rect key="frame" x="0.0" y="74.5" width="375" height="572.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CellDashboard" id="ub2-h8-ijr" customClass="DashboardTVC" customModule="Practical_SustLabs" customModuleProvider="target">
@@ -179,7 +179,7 @@
                             <constraint firstItem="P47-oO-7Jh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gw5-4b-3CL"/>
                             <constraint firstItem="gvN-nv-4ar" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="owN-vE-lPZ"/>
                             <constraint firstItem="rg7-ak-9f5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="quk-Lx-uTb"/>
-                            <constraint firstAttribute="bottom" secondItem="gvN-nv-4ar" secondAttribute="bottom" id="xUx-tw-a1L"/>
+                            <constraint firstAttribute="bottom" secondItem="gvN-nv-4ar" secondAttribute="bottom" constant="20" id="xUx-tw-a1L"/>
                             <constraint firstAttribute="trailing" secondItem="gvN-nv-4ar" secondAttribute="trailing" id="yb3-HO-Y6W"/>
                         </constraints>
                     </view>
